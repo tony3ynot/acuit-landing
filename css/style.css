@@ -178,6 +178,7 @@ img {
 .nav-left {
   display: flex;
   align-items: center;
+  flex: 1;
 }
 
 .logo {
@@ -239,7 +240,9 @@ img {
 .nav-right {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   gap: 16px;
+  flex: 1;
 }
 
 /* Language Toggle */
@@ -413,21 +416,33 @@ img {
   padding: 0 var(--gutter);
 }
 
-/* Hero MIIN Logo */
+/* Hero acuIT Logo */
 .hero-logo {
   margin-bottom: 40px;
-}
-
-.hero-logo svg {
-  width: 220px;
-  height: auto;
-  filter: drop-shadow(0 0 30px rgba(201, 168, 76, 0.3));
+  font-family: var(--font-display);
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1;
   animation: logo-glow 4s ease-in-out infinite alternate;
 }
 
+.hero-logo-acu {
+  color: var(--text-primary);
+}
+
+.hero-logo-it {
+  background: linear-gradient(180deg, #E8D48B 0%, #C9A84C 40%, #A07C2A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
 @keyframes logo-glow {
-  0% { filter: drop-shadow(0 0 20px rgba(201, 168, 76, 0.2)); }
-  100% { filter: drop-shadow(0 0 40px rgba(201, 168, 76, 0.5)); }
+  0% { text-shadow: 0 0 20px rgba(201, 168, 76, 0.15); filter: drop-shadow(0 0 20px rgba(201, 168, 76, 0.15)); }
+  100% { text-shadow: 0 0 40px rgba(201, 168, 76, 0.35); filter: drop-shadow(0 0 40px rgba(201, 168, 76, 0.35)); }
 }
 
 /* Side Decorations */
@@ -824,34 +839,23 @@ img {
   display: flex;
   align-items: center;
   gap: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 
-.product-icon {
-  width: 48px;
-  height: 48px;
-  border-radius: 14px;
-  background: var(--gradient-gold-h);
+.product-logo-wrap {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
+  align-items: baseline;
+  gap: 12px;
 }
 
-.product-icon svg {
-  width: 100%;
+.product-miin-logo {
+  width: 120px;
   height: auto;
-}
-
-.product-name {
-  font-family: var(--font-display);
-  font-size: 28px;
-  font-weight: 700;
-  color: var(--text-primary);
+  filter: drop-shadow(0 0 20px rgba(201, 168, 76, 0.25));
 }
 
 .product-name-sub {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 500;
   color: var(--text-secondary);
 }
@@ -1440,6 +1444,10 @@ img {
 
   .hero-content {
     max-width: 100%;
+  }
+
+  .hero-logo {
+    font-size: 56px;
   }
 
   .hero-title {
