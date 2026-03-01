@@ -49,6 +49,11 @@ function setLang(lang) {
   setLang(saved || browser);
 })();
 
+// ── Language Button Bindings ──
+document.querySelectorAll('.lang-btn').forEach(btn => {
+  btn.addEventListener('click', () => setLang(btn.dataset.lang));
+});
+
 // ── Mobile Menu ──
 const mobileMenuBtn = document.getElementById('mobileMenuBtn');
 const mobileMenu = document.getElementById('mobileMenu');
@@ -64,6 +69,11 @@ function closeMobileMenu() {
   mobileMenu.classList.remove('active');
   document.body.style.overflow = '';
 }
+
+// Close mobile menu links on click
+mobileMenu.querySelectorAll('.nav-link, .nav-cta').forEach(link => {
+  link.addEventListener('click', closeMobileMenu);
+});
 
 // Close mobile menu on resize to desktop
 window.addEventListener('resize', () => {
@@ -172,7 +182,9 @@ function countUp(el, target, duration, prefix, suffix) {
 // ── Smooth scroll for anchor links (fallback for older browsers) ──
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
-    const target = document.querySelector(this.getAttribute('href'));
+    const href = this.getAttribute('href');
+    if (href === '#' || href.length < 2) return;
+    const target = document.querySelector(href);
     if (target) {
       e.preventDefault();
       target.scrollIntoView({ behavior: 'smooth' });

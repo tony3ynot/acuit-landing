@@ -1003,7 +1003,7 @@ img {
 
 .timeline-marker {
   position: absolute;
-  left: -36px;
+  left: -40px;
   top: 4px;
   width: 16px;
   height: 16px;
@@ -1216,11 +1216,11 @@ img {
 }
 
 .footer-info {
-  margin-bottom: 16px;
+  margin-bottom: 0;
 }
 
 .footer-info p {
-  font-size: 12px;
+  font-size: 13px;
   color: var(--text-tertiary);
   line-height: 1.6;
 }
