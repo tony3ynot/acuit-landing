@@ -149,7 +149,7 @@ function countUp(el, target, duration, prefix, suffix) {
       const alpha = p.alpha * (0.6 + 0.4 * Math.sin(time * 0.8 + p.pulse));
       ctx.beginPath();
       ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(201, 168, 76, ${alpha})`;
+      ctx.fillStyle = `rgba(212, 180, 78, ${alpha})`;
       ctx.fill();
     });
 
@@ -163,7 +163,7 @@ function countUp(el, target, duration, prefix, suffix) {
           ctx.beginPath();
           ctx.moveTo(particles[i].x, particles[i].y);
           ctx.lineTo(particles[j].x, particles[j].y);
-          ctx.strokeStyle = `rgba(201, 168, 76, ${0.12 * (1 - dist / 120)})`;
+          ctx.strokeStyle = `rgba(212, 180, 78, ${0.12 * (1 - dist / 120)})`;
           ctx.lineWidth = 0.6;
           ctx.stroke();
         }

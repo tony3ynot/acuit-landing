@@ -21,15 +21,15 @@
   --bg-elevated:      #1C1E28;
 
   /* ACCENT: GOLD */
-  --accent-primary:   #C9A84C;
-  --accent-light:     #E8D48B;
-  --accent-dark:      #A07C2A;
-  --accent-glow:      rgba(201, 168, 76, 0.18);
-  --accent-subtle:    rgba(201, 168, 76, 0.10);
+  --accent-primary:   #D4B44E;
+  --accent-light:     #F0DC8A;
+  --accent-dark:      #B89530;
+  --accent-glow:      rgba(212, 180, 78, 0.18);
+  --accent-subtle:    rgba(212, 180, 78, 0.10);
 
-  --gradient-gold:    linear-gradient(180deg, #E8D48B, #A07C2A);
-  --gradient-gold-h:  linear-gradient(90deg, #E8D48B, #C9A84C, #A07C2A);
-  --gradient-gold-r:  radial-gradient(circle, #E8D48B, #C9A84C, #A07C2A);
+  --gradient-gold:    linear-gradient(180deg, #F0DC8A, #B89530);
+  --gradient-gold-h:  linear-gradient(90deg, #F0DC8A, #D4B44E, #B89530);
+  --gradient-gold-r:  radial-gradient(circle, #F0DC8A, #D4B44E, #B89530);
 
   /* ACCENT: SECONDARY */
   --accent-secondary: #8B7355;
@@ -38,17 +38,17 @@
   --text-primary:     #F0EDE6;
   --text-secondary:   #9B9484;
   --text-tertiary:    #6B6459;
-  --text-accent:      #C9A84C;
+  --text-accent:      #D4B44E;
 
   /* BORDER */
-  --border-subtle:    rgba(201, 168, 76, 0.06);
+  --border-subtle:    rgba(212, 180, 78, 0.06);
   --border-default:   rgba(255, 255, 255, 0.08);
-  --border-hover:     rgba(201, 168, 76, 0.30);
+  --border-hover:     rgba(212, 180, 78, 0.30);
 
   /* GRADIENTS */
-  --gradient-hero:    radial-gradient(ellipse 70% 50% at 50% 0%, rgba(201, 168, 76, 0.06), transparent),
-                      radial-gradient(ellipse 50% 40% at 80% 20%, rgba(160, 124, 42, 0.04), transparent);
-  --gradient-card:    linear-gradient(180deg, rgba(201, 168, 76, 0.02) 0%, transparent 100%);
+  --gradient-hero:    radial-gradient(ellipse 70% 50% at 50% 0%, rgba(212, 180, 78, 0.06), transparent),
+                      radial-gradient(ellipse 50% 40% at 80% 20%, rgba(184, 149, 48, 0.04), transparent);
+  --gradient-card:    linear-gradient(180deg, rgba(212, 180, 78, 0.02) 0%, transparent 100%);
 
   /* TYPOGRAPHY */
   --font-display:  'DM Sans', sans-serif;
@@ -197,7 +197,7 @@ img {
 }
 
 .logo-it {
-  background: linear-gradient(180deg, #E8D48B 0%, #C9A84C 40%, #A07C2A 100%);
+  background: linear-gradient(180deg, #F0DC8A 0%, #D4B44E 40%, #B89530 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -372,11 +372,11 @@ img {
   width: 140%;
   height: 140%;
   background:
-    radial-gradient(ellipse 60% 50% at 20% 30%, rgba(201, 168, 76, 0.18), transparent 60%),
-    radial-gradient(ellipse 50% 60% at 80% 20%, rgba(160, 124, 42, 0.14), transparent 60%),
-    radial-gradient(ellipse 40% 40% at 50% 60%, rgba(232, 212, 139, 0.10), transparent 50%),
-    radial-gradient(ellipse 30% 30% at 10% 80%, rgba(201, 168, 76, 0.08), transparent 50%),
-    radial-gradient(ellipse 30% 30% at 90% 70%, rgba(160, 124, 42, 0.06), transparent 50%);
+    radial-gradient(ellipse 60% 50% at 20% 30%, rgba(212, 180, 78, 0.18), transparent 60%),
+    radial-gradient(ellipse 50% 60% at 80% 20%, rgba(184, 149, 48, 0.14), transparent 60%),
+    radial-gradient(ellipse 40% 40% at 50% 60%, rgba(240, 220, 138, 0.10), transparent 50%),
+    radial-gradient(ellipse 30% 30% at 10% 80%, rgba(212, 180, 78, 0.08), transparent 50%),
+    radial-gradient(ellipse 30% 30% at 90% 70%, rgba(184, 149, 48, 0.06), transparent 50%);
   animation: aurora 12s ease-in-out infinite alternate;
   pointer-events: none;
 }
@@ -387,8 +387,8 @@ img {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(201, 168, 76, 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(201, 168, 76, 0.06) 1px, transparent 1px);
+    linear-gradient(rgba(212, 180, 78, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(212, 180, 78, 0.06) 1px, transparent 1px);
   background-size: 80px 80px;
   mask-image: radial-gradient(ellipse 80% 70% at 50% 40%, black 30%, transparent 70%);
   -webkit-mask-image: radial-gradient(ellipse 80% 70% at 50% 40%, black 30%, transparent 70%);
@@ -433,7 +433,7 @@ img {
 }
 
 .hero-logo-it {
-  background: linear-gradient(180deg, #E8D48B 0%, #C9A84C 40%, #A07C2A 100%);
+  background: linear-gradient(180deg, #F0DC8A 0%, #D4B44E 40%, #B89530 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -442,8 +442,8 @@ img {
 }
 
 @keyframes logo-glow {
-  0% { text-shadow: 0 0 20px rgba(201, 168, 76, 0.15); filter: drop-shadow(0 0 20px rgba(201, 168, 76, 0.15)); }
-  100% { text-shadow: 0 0 40px rgba(201, 168, 76, 0.35); filter: drop-shadow(0 0 40px rgba(201, 168, 76, 0.35)); }
+  0% { text-shadow: 0 0 20px rgba(212, 180, 78, 0.15); filter: drop-shadow(0 0 20px rgba(212, 180, 78, 0.15)); }
+  100% { text-shadow: 0 0 40px rgba(212, 180, 78, 0.35); filter: drop-shadow(0 0 40px rgba(212, 180, 78, 0.35)); }
 }
 
 /* Side Decorations */
@@ -458,12 +458,12 @@ img {
 
 .side-decor-left {
   left: 4%;
-  background: linear-gradient(180deg, transparent 5%, rgba(201, 168, 76, 0.12) 30%, rgba(201, 168, 76, 0.06) 50%, rgba(201, 168, 76, 0.12) 70%, transparent 95%);
+  background: linear-gradient(180deg, transparent 5%, rgba(212, 180, 78, 0.12) 30%, rgba(212, 180, 78, 0.06) 50%, rgba(212, 180, 78, 0.12) 70%, transparent 95%);
 }
 
 .side-decor-right {
   right: 4%;
-  background: linear-gradient(180deg, transparent 5%, rgba(201, 168, 76, 0.08) 25%, rgba(201, 168, 76, 0.12) 50%, rgba(201, 168, 76, 0.08) 75%, transparent 95%);
+  background: linear-gradient(180deg, transparent 5%, rgba(212, 180, 78, 0.08) 25%, rgba(212, 180, 78, 0.12) 50%, rgba(212, 180, 78, 0.08) 75%, transparent 95%);
 }
 
 .side-decor::before,
@@ -475,7 +475,7 @@ img {
   left: -2.5px;
   background: var(--accent-primary);
   border-radius: 50%;
-  box-shadow: 0 0 16px rgba(201, 168, 76, 0.5);
+  box-shadow: 0 0 16px rgba(212, 180, 78, 0.5);
   animation: float-dot 6s ease-in-out infinite;
 }
 
@@ -551,7 +551,7 @@ img {
 }
 
 .btn-primary:hover {
-  box-shadow: 0 0 24px rgba(201, 168, 76, 0.25),
+  box-shadow: 0 0 24px rgba(212, 180, 78, 0.25),
               0 4px 12px rgba(0, 0, 0, 0.3);
   transform: translateY(-1px);
 }
@@ -627,8 +627,8 @@ img {
   display: block;
   height: 1px;
   margin-bottom: 120px;
-  background: linear-gradient(90deg, transparent 5%, rgba(201, 168, 76, 0.5) 30%, rgba(232, 212, 139, 0.6) 50%, rgba(201, 168, 76, 0.5) 70%, transparent 95%);
-  box-shadow: 0 0 30px rgba(201, 168, 76, 0.3), 0 0 60px rgba(201, 168, 76, 0.1);
+  background: linear-gradient(90deg, transparent 5%, rgba(212, 180, 78, 0.5) 30%, rgba(240, 220, 138, 0.6) 50%, rgba(212, 180, 78, 0.5) 70%, transparent 95%);
+  box-shadow: 0 0 30px rgba(212, 180, 78, 0.3), 0 0 60px rgba(212, 180, 78, 0.1);
 }
 
 /* ══════════════════════════════════════
@@ -692,19 +692,19 @@ img {
 
 .about-visual-art .ring-1 {
   inset: 0;
-  border-color: rgba(201, 168, 76, 0.15);
+  border-color: rgba(212, 180, 78, 0.15);
   animation: rotate-slow 30s linear infinite;
 }
 
 .about-visual-art .ring-2 {
   inset: 30px;
-  border-color: rgba(201, 168, 76, 0.1);
+  border-color: rgba(212, 180, 78, 0.1);
   animation: rotate-slow 25s linear infinite reverse;
 }
 
 .about-visual-art .ring-3 {
   inset: 60px;
-  border-color: rgba(201, 168, 76, 0.2);
+  border-color: rgba(212, 180, 78, 0.2);
   animation: rotate-slow 20s linear infinite;
 }
 
@@ -720,7 +720,7 @@ img {
   height: 8px;
   border-radius: 50%;
   background: var(--accent-primary);
-  box-shadow: 0 0 16px rgba(201, 168, 76, 0.5), 0 0 4px rgba(201, 168, 76, 0.8);
+  box-shadow: 0 0 16px rgba(212, 180, 78, 0.5), 0 0 4px rgba(212, 180, 78, 0.8);
 }
 
 .orbit-1 {
@@ -764,7 +764,7 @@ img {
 }
 
 .ct-it {
-  background: linear-gradient(180deg, rgba(232, 212, 139, 0.15), rgba(160, 124, 42, 0.15));
+  background: linear-gradient(180deg, rgba(240, 220, 138, 0.15), rgba(184, 149, 48, 0.15));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -805,9 +805,9 @@ img {
   background: conic-gradient(
     from 0deg at 50% 50%,
     transparent 0deg,
-    rgba(201, 168, 76, 0.08) 60deg,
+    rgba(212, 180, 78, 0.08) 60deg,
     transparent 120deg,
-    rgba(232, 212, 139, 0.06) 240deg,
+    rgba(240, 220, 138, 0.06) 240deg,
     transparent 360deg
   );
   animation: shimmer-rotate 15s linear infinite;
@@ -827,9 +827,9 @@ img {
   padding: 1px;
   background: linear-gradient(
     135deg,
-    rgba(232, 212, 139, 0.3),
-    rgba(201, 168, 76, 0.1),
-    rgba(160, 124, 42, 0.2)
+    rgba(240, 220, 138, 0.3),
+    rgba(212, 180, 78, 0.1),
+    rgba(184, 149, 48, 0.2)
   );
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
@@ -854,7 +854,7 @@ img {
   display: block;
   width: 120px;
   height: 60px;
-  filter: drop-shadow(0 0 20px rgba(201, 168, 76, 0.25));
+  filter: drop-shadow(0 0 20px rgba(212, 180, 78, 0.25));
 }
 
 .product-name-sub {
@@ -1235,9 +1235,9 @@ img {
   padding: 1px;
   background: linear-gradient(
     135deg,
-    rgba(232, 212, 139, 0.4),
-    rgba(201, 168, 76, 0.1),
-    rgba(232, 212, 139, 0.25)
+    rgba(240, 220, 138, 0.4),
+    rgba(212, 180, 78, 0.1),
+    rgba(240, 220, 138, 0.25)
   );
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
@@ -1253,7 +1253,7 @@ img {
   transform: translateX(-50%);
   width: 60%;
   height: 50%;
-  background: radial-gradient(ellipse, rgba(201, 168, 76, 0.06), transparent 70%);
+  background: radial-gradient(ellipse, rgba(212, 180, 78, 0.06), transparent 70%);
   pointer-events: none;
 }
 
@@ -1591,23 +1591,3 @@ img {
   }
 }
 
-/* ══════════════════════════════════════
-   MOBILE DARK MODE — brighter gold
-   Prevents gold appearing brownish on
-   mobile screens with dark mode enabled
-   ══════════════════════════════════════ */
-@media (max-width: 768px) and (prefers-color-scheme: dark) {
-  :root {
-    --accent-primary:   #D4B44E;
-    --accent-light:     #F0DC8A;
-    --accent-dark:      #B89530;
-    --accent-glow:      rgba(212, 180, 78, 0.18);
-    --accent-subtle:    rgba(212, 180, 78, 0.10);
-    --text-accent:      #D4B44E;
-    --gradient-gold:    linear-gradient(180deg, #F0DC8A, #B89530);
-    --gradient-gold-h:  linear-gradient(90deg, #F0DC8A, #D4B44E, #B89530);
-    --gradient-gold-r:  radial-gradient(circle, #F0DC8A, #D4B44E, #B89530);
-    --border-subtle:    rgba(212, 180, 78, 0.06);
-    --border-hover:     rgba(212, 180, 78, 0.30);
-  }
-}
