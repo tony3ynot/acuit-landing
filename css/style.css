@@ -625,6 +625,7 @@ img {
   content: '';
   display: block;
   height: 1px;
+  margin-bottom: 120px;
   background: linear-gradient(90deg, transparent 5%, rgba(201, 168, 76, 0.5) 30%, rgba(232, 212, 139, 0.6) 50%, rgba(201, 168, 76, 0.5) 70%, transparent 95%);
   box-shadow: 0 0 30px rgba(201, 168, 76, 0.3), 0 0 60px rgba(201, 168, 76, 0.1);
 }
@@ -844,13 +845,14 @@ img {
 
 .product-logo-wrap {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   gap: 12px;
 }
 
 .product-miin-logo {
+  display: block;
   width: 120px;
-  height: auto;
+  height: 60px;
   filter: drop-shadow(0 0 20px rgba(201, 168, 76, 0.25));
 }
 
@@ -1044,6 +1046,36 @@ img {
   color: var(--text-secondary);
   margin-top: 8px;
   line-height: 1.4;
+}
+
+.team-links {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.team-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--border-default);
+  color: var(--text-tertiary);
+  transition: all 0.3s ease;
+}
+
+.team-link:hover {
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
+}
+
+.team-link svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
 }
 
 /* ══════════════════════════════════════
