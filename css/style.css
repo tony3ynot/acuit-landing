@@ -81,7 +81,12 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
-  color-scheme: dark;
+  color-scheme: only dark;
+}
+
+/* Prevent Samsung Internet & other browsers from forcing dark mode adjustments */
+html, body, * {
+  forced-color-adjust: none;
 }
 
 body {
