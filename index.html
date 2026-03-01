@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>AcuIT — AI-Powered Global Healthcare Platform</title>
+  <meta name="description" content="AcuIT builds AI infrastructure for global medical tourism. Connecting international patients with Korea's world-class healthcare.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="AcuIT — AI-Powered Global Healthcare Platform">
+  <meta property="og:description" content="Connecting international patients with Korea's world-class healthcare through AI.">
+  <meta property="og:image" content="https://acuitlab.com/assets/images/og-image.jpg">
+  <meta property="og:url" content="https://acuitlab.com">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AcuIT — AI-Powered Global Healthcare Platform">
+  <meta name="twitter:description" content="Connecting international patients with Korea's world-class healthcare through AI.">
+  <meta name="twitter:image" content="https://acuitlab.com/assets/images/og-image.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/favicon/favicon.ico">
+  <link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <!-- ════════════ NAVIGATION ════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="nav-left">
+        <a href="#" class="logo">
+          <span class="logo-acu">acu</span><span class="logo-it">IT</span>
+        </a>
+      </div>
+
+      <div class="nav-center">
+        <a href="#about" class="nav-link" data-lang="en">About</a>
+        <a href="#about" class="nav-link" data-lang="ko" hidden>회사소개</a>
+        <a href="#technology" class="nav-link" data-lang="en">Technology</a>
+        <a href="#technology" class="nav-link" data-lang="ko" hidden>기술</a>
+        <a href="#product" class="nav-link" data-lang="en">Product</a>
+        <a href="#product" class="nav-link" data-lang="ko" hidden>제품</a>
+        <a href="#team" class="nav-link" data-lang="en">Team</a>
+        <a href="#team" class="nav-link" data-lang="ko" hidden>팀</a>
+      </div>
+
+      <div class="nav-right">
+        <div class="lang-toggle">
+          <button class="lang-btn active" data-lang="en" onclick="setLang('en')">EN</button>
+          <button class="lang-btn" data-lang="ko" onclick="setLang('ko')">KO</button>
+        </div>
+        <a href="#contact" class="nav-cta">
+          <span data-lang="en">Contact</span>
+          <span data-lang="ko" hidden>문의하기</span>
+          <span>&rarr;</span>
+        </a>
+      </div>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" class="nav-link" data-lang="en" onclick="closeMobileMenu()">About</a>
+    <a href="#about" class="nav-link" data-lang="ko" hidden onclick="closeMobileMenu()">회사소개</a>
+    <a href="#technology" class="nav-link" data-lang="en" onclick="closeMobileMenu()">Technology</a>
+    <a href="#technology" class="nav-link" data-lang="ko" hidden onclick="closeMobileMenu()">기술</a>
+    <a href="#product" class="nav-link" data-lang="en" onclick="closeMobileMenu()">Product</a>
+    <a href="#product" class="nav-link" data-lang="ko" hidden onclick="closeMobileMenu()">제품</a>
+    <a href="#team" class="nav-link" data-lang="en" onclick="closeMobileMenu()">Team</a>
+    <a href="#team" class="nav-link" data-lang="ko" hidden onclick="closeMobileMenu()">팀</a>
+    <div class="lang-toggle" style="margin-top: 16px;">
+      <button class="lang-btn active" data-lang="en" onclick="setLang('en')">EN</button>
+      <button class="lang-btn" data-lang="ko" onclick="setLang('ko')">KO</button>
+    </div>
+    <a href="#contact" class="nav-cta" onclick="closeMobileMenu()">
+      <span data-lang="en">Contact</span>
+      <span data-lang="ko" hidden>문의하기</span>
+      <span>&rarr;</span>
+    </a>
+  </div>
+
+  <!-- ════════════ HERO ════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="badge-pill">
+        <span class="icon">&#10022;</span>
+        <span data-lang="en">Backed by SNU RISE</span>
+        <span data-lang="ko" hidden>서울대 RISE 선정</span>
+      </div>
+
+      <h1 class="hero-title" data-lang="en">
+        Redefining Global<br>Healthcare Access.
+      </h1>
+      <h1 class="hero-title-ko" data-lang="ko" hidden>
+        글로벌 헬스케어<br>접근성을 재정의합니다.
+      </h1>
+
+      <p class="hero-subtitle" data-lang="en">
+        We build AI infrastructure that connects international patients with Korea's world-class medical services.
+      </p>
+      <p class="hero-subtitle hero-subtitle-ko" data-lang="ko" hidden>
+        AI 기술로 전 세계 환자와<br>한국 의료를 연결합니다.
+      </p>
+
+      <div class="hero-ctas">
+        <a href="#product" class="btn-primary">
+          <span data-lang="en">Our Product</span>
+          <span data-lang="ko" hidden>제품 보기</span>
+          <span>&rarr;</span>
+        </a>
+        <a href="#contact" class="btn-secondary">
+          <span data-lang="en">Get in Touch</span>
+          <span data-lang="ko" hidden>문의하기</span>
+        </a>
+      </div>
+
+      <div class="tech-strip">
+        <span class="divider-text">Powered by</span>
+        <span class="tech-strip-item">Flutter</span>
+        <span class="tech-strip-item">FastAPI</span>
+        <span class="tech-strip-item">AWS</span>
+        <span class="tech-strip-item">LLM</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ ABOUT ════════════ -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-label">About Us</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <div class="reveal">
+            <h2 class="section-title" data-lang="en">
+              We build AI infrastructure<br>for global medical tourism.
+            </h2>
+            <h2 class="section-title-ko" data-lang="ko" hidden>
+              글로벌 의료관광을 위한<br>AI 인프라를 만듭니다.
+            </h2>
+          </div>
+
+          <div class="reveal">
+            <p data-lang="en">
+              AcuIT is an AI medical tourism startup founded in 2026 by two Seoul National University graduates. We are on a mission to break down language and information barriers in global healthcare.
+            </p>
+            <p data-lang="ko" hidden>
+              어큐아이티는 2026년 서울대학교 출신 2인이 설립한 AI 의료관광 스타트업입니다. 글로벌 헬스케어의 언어와 정보 장벽을 허무는 것이 우리의 미션입니다.
+            </p>
+          </div>
+
+          <div class="reveal">
+            <p data-lang="en">
+              Our vision is a world where anyone, anywhere, can access Korea's world-class medical services with confidence — powered by AI that understands context, culture, and care.
+            </p>
+            <p data-lang="ko" hidden>
+              전 세계 누구나, 어디서나, 한국의 세계적 수준의 의료 서비스를 자신 있게 이용할 수 있는 세상. AI가 맥락, 문화, 그리고 케어를 이해하는 그 세상이 우리의 비전입니다.
+            </p>
+          </div>
+        </div>
+
+        <div class="about-visual reveal">
+          <div class="about-visual-art">
+            <div class="ring ring-1"></div>
+            <div class="ring ring-2"></div>
+            <div class="ring ring-3"></div>
+            <div class="dot dot-1"></div>
+            <div class="dot dot-2"></div>
+            <div class="dot dot-3"></div>
+            <div class="dot dot-4"></div>
+            <div class="center-text">acu</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ PRODUCT ════════════ -->
+  <section class="product" id="product">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-label">Product</p>
+        <h2 class="section-title" data-lang="en">Our flagship platform.</h2>
+        <h2 class="section-title-ko" data-lang="ko" hidden>우리의 핵심 제품.</h2>
+      </div>
+
+      <div class="product-card reveal">
+        <div class="product-header">
+          <div class="product-icon">M</div>
+          <div>
+            <div class="product-name">MIIN <span class="product-name-sub">(미인)</span></div>
+          </div>
+        </div>
+
+        <p class="product-desc" data-lang="en">
+          AI-Powered Global Medical Tourism Platform. Connecting international patients with Korea's best clinics through semantic search, price comparison, verified reviews, and native multilingual support.
+        </p>
+        <p class="product-desc" data-lang="ko" hidden>
+          AI 기반 글로벌 의료관광 플랫폼. 시맨틱 검색, 가격 비교, 검증된 리뷰, 다국어 지원으로 외국인 환자와 한국 최고의 클리닉을 연결합니다.
+        </p>
+
+        <div class="feature-grid">
+          <div class="feature-mini reveal reveal-stagger">
+            <div class="icon">&#128269;</div>
+            <div class="title" data-lang="en">AI Semantic Search</div>
+            <div class="title" data-lang="ko" hidden>AI 시맨틱 검색</div>
+            <div class="desc" data-lang="en">Natural language clinic discovery</div>
+            <div class="desc" data-lang="ko" hidden>자연어 기반 클리닉 검색</div>
+          </div>
+          <div class="feature-mini reveal reveal-stagger">
+            <div class="icon">&#128176;</div>
+            <div class="title" data-lang="en">Price Cross-Check</div>
+            <div class="title" data-lang="ko" hidden>가격 비교</div>
+            <div class="desc" data-lang="en">Transparent pricing across clinics</div>
+            <div class="desc" data-lang="ko" hidden>클리닉 간 투명한 가격 비교</div>
+          </div>
+          <div class="feature-mini reveal reveal-stagger">
+            <div class="icon">&#10003;</div>
+            <div class="title" data-lang="en">Verified Reviews</div>
+            <div class="title" data-lang="ko" hidden>검증된 리뷰</div>
+            <div class="desc" data-lang="en">Real patient experiences</div>
+            <div class="desc" data-lang="ko" hidden>실제 환자 경험 기반</div>
+          </div>
+          <div class="feature-mini reveal reveal-stagger">
+            <div class="icon">&#127760;</div>
+            <div class="title" data-lang="en">5 Languages</div>
+            <div class="title" data-lang="ko" hidden>5개 언어 지원</div>
+            <div class="desc" data-lang="en">Native multilingual support</div>
+            <div class="desc" data-lang="ko" hidden>네이티브 다국어 지원</div>
+          </div>
+        </div>
+
+        <div class="product-cta">
+          <a href="#contact" class="btn-primary">
+            <span data-lang="en">Learn More</span>
+            <span data-lang="ko" hidden>자세히 보기</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ TECHNOLOGY ════════════ -->
+  <section class="technology" id="technology">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-label">Technology</p>
+        <h2 class="section-title" data-lang="en">Engineered for scale.</h2>
+        <h2 class="section-title-ko" data-lang="ko" hidden>확장을 위해 설계되었습니다.</h2>
+      </div>
+
+      <div class="tech-grid">
+        <div class="tech-card reveal reveal-stagger">
+          <div class="card-icon">&#9671;</div>
+          <div class="tech-name">Flutter</div>
+          <div class="tech-desc" data-lang="en">Cross-platform mobile app for iOS & Android. Single codebase, native performance.</div>
+          <div class="tech-desc" data-lang="ko" hidden>iOS & Android 크로스 플랫폼 모바일 앱. 단일 코드베이스, 네이티브 성능.</div>
+        </div>
+        <div class="tech-card reveal reveal-stagger">
+          <div class="card-icon">&#9671;</div>
+          <div class="tech-name">FastAPI</div>
+          <div class="tech-desc" data-lang="en">High-performance async Python backend. Type-safe, auto-documented REST APIs.</div>
+          <div class="tech-desc" data-lang="ko" hidden>고성능 비동기 Python 백엔드. 타입 안전, 자동 문서화 REST API.</div>
+        </div>
+        <div class="tech-card reveal reveal-stagger">
+          <div class="card-icon">&#9671;</div>
+          <div class="tech-name">AWS</div>
+          <div class="tech-desc" data-lang="en">Serverless infrastructure on Fargate. Auto-scaling, globally distributed.</div>
+          <div class="tech-desc" data-lang="ko" hidden>Fargate 기반 서버리스 인프라. 오토 스케일링, 글로벌 분산 구조.</div>
+        </div>
+        <div class="tech-card reveal reveal-stagger">
+          <div class="card-icon">&#9671;</div>
+          <div class="tech-name">LLM / AI</div>
+          <div class="tech-desc" data-lang="en">LLM-powered semantic search and NLP engine. Context-aware multilingual processing.</div>
+          <div class="tech-desc" data-lang="ko" hidden>LLM 기반 시맨틱 검색 및 NLP 엔진. 맥락 인식 다국어 처리.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ TEAM ════════════ -->
+  <section class="team" id="team">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-label">Team</p>
+        <h2 class="section-title" data-lang="en">Built by SNU engineers.</h2>
+        <h2 class="section-title-ko" data-lang="ko" hidden>서울대 출신 엔지니어가 만듭니다.</h2>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-card reveal reveal-stagger">
+          <div class="team-photo-placeholder">JY</div>
+          <div class="team-name" data-lang="en">Jaeyoung Ju</div>
+          <div class="team-name" data-lang="ko" hidden>주재영</div>
+          <div class="team-name-en" data-lang="ko" hidden>Jaeyoung Ju</div>
+          <div class="team-role">CEO & Co-founder</div>
+          <div class="team-edu" data-lang="en">
+            Seoul National University<br>Liberal Studies (EE + Business)
+          </div>
+          <div class="team-edu" data-lang="ko" hidden>
+            서울대학교 자유전공학부<br>(전기공학 + 경영학)
+          </div>
+        </div>
+
+        <div class="team-card reveal reveal-stagger">
+          <div class="team-photo-placeholder">JP</div>
+          <div class="team-name" data-lang="en">Juyong Park</div>
+          <div class="team-name" data-lang="ko" hidden>박주용</div>
+          <div class="team-name-en" data-lang="ko" hidden>Juyong Park</div>
+          <div class="team-role">Director</div>
+          <div class="team-edu" data-lang="en">
+            Seoul National University<br>Business Admin + AI Joint Major
+          </div>
+          <div class="team-edu" data-lang="ko" hidden>
+            서울대학교 경영학과<br>+ AI 연합전공
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ MILESTONES ════════════ -->
+  <section class="milestones" id="milestones">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-label">Milestones</p>
+        <h2 class="section-title" data-lang="en">Our journey so far.</h2>
+        <h2 class="section-title-ko" data-lang="ko" hidden>지금까지의 여정.</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-date">2026. 01</div>
+          <div class="timeline-title" data-lang="en">Company Founded</div>
+          <div class="timeline-title" data-lang="ko" hidden>법인 설립</div>
+          <div class="timeline-desc" data-lang="en">AcuIT Inc. established in Seoul, South Korea.</div>
+          <div class="timeline-desc" data-lang="ko" hidden>대한민국 서울에 주식회사 어큐아이티 설립.</div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-date">2026. 01</div>
+          <div class="timeline-title" data-lang="en">SNU RISE Selected</div>
+          <div class="timeline-title" data-lang="ko" hidden>서울대 RISE 선정</div>
+          <div class="timeline-desc" data-lang="en">Selected for Seoul National University RISE program. &#8361;10M grant awarded.</div>
+          <div class="timeline-desc" data-lang="ko" hidden>서울대학교 RISE 프로그램 선정. 1,000만원 지원금 수여.</div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker in-progress"></div>
+          <div class="timeline-date">2026 Q1</div>
+          <div class="timeline-title" data-lang="en">MVP Launch</div>
+          <div class="timeline-title" data-lang="ko" hidden>MVP 출시</div>
+          <div class="timeline-desc" data-lang="en">MIIN platform MVP currently in development.</div>
+          <div class="timeline-desc" data-lang="ko" hidden>MIIN 플랫폼 MVP 개발 진행 중.</div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker planned"></div>
+          <div class="timeline-date">2026 Q2</div>
+          <div class="timeline-title" data-lang="en">Full Service Launch</div>
+          <div class="timeline-title" data-lang="ko" hidden>정식 서비스 출시</div>
+          <div class="timeline-desc" data-lang="en">Open beta and full service launch planned.</div>
+          <div class="timeline-desc" data-lang="ko" hidden>오픈 베타 및 정식 서비스 출시 예정.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ PARTNERS ════════════ -->
+  <section class="partners" id="partners">
+    <div class="container" style="text-align: center;">
+      <div class="reveal">
+        <p class="section-label">Backed By</p>
+      </div>
+      <div class="partner-logos reveal">
+        <span class="partner-text">SNU RISE</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ CONTACT ════════════ -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="cta-card reveal">
+        <h2 class="cta-title" data-lang="en">
+          Let's build the future of<br>healthcare, together.
+        </h2>
+        <h2 class="cta-title" data-lang="ko" hidden style="font-family: var(--font-ko); font-size: 36px; line-height: 1.25;">
+          의료의 미래를<br>함께 만들어갑니다.
+        </h2>
+
+        <p class="cta-subtitle" data-lang="en">
+          We welcome partnerships, investment, and talent inquiries.
+        </p>
+        <p class="cta-subtitle" data-lang="ko" hidden>
+          파트너십, 투자, 채용 등 문의를 환영합니다.
+        </p>
+
+        <a href="mailto:hello@acuitlab.com" class="btn-primary">
+          <span data-lang="en">Get in Touch</span>
+          <span data-lang="ko" hidden>문의하기</span>
+          <span>&rarr;</span>
+        </a>
+
+        <div class="cta-email">
+          <a href="mailto:hello@acuitlab.com">hello@acuitlab.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ FOOTER ════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="#" class="logo">
+          <span class="logo-acu">acu</span><span class="logo-it">IT</span>
+        </a>
+        <div class="footer-links">
+          <a href="#about" data-lang="en">About</a>
+          <a href="#about" data-lang="ko" hidden>회사소개</a>
+          <a href="#technology" data-lang="en">Technology</a>
+          <a href="#technology" data-lang="ko" hidden>기술</a>
+          <a href="#product" data-lang="en">Product</a>
+          <a href="#product" data-lang="ko" hidden>제품</a>
+          <a href="#team" data-lang="en">Team</a>
+          <a href="#team" data-lang="ko" hidden>팀</a>
+          <a href="#contact" data-lang="en">Contact</a>
+          <a href="#contact" data-lang="ko" hidden>문의</a>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <div class="footer-copyright">
+          &copy; 2026 AcuIT Inc. All rights reserved.
+        </div>
+        <div class="footer-social">
+          <!-- LinkedIn -->
+          <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+          <!-- GitHub -->
+          <a href="#" aria-label="GitHub" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="/js/main.js"></script>
+
+</body>
+</html>
