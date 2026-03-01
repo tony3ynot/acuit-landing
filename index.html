@@ -42,6 +42,10 @@
 
 <body>
 
+  <!-- Side decorations -->
+  <div class="side-decor side-decor-left"></div>
+  <div class="side-decor side-decor-right"></div>
+
   <!-- ════════════ NAVIGATION ════════════ -->
   <nav class="navbar" id="navbar">
     <div class="container">
@@ -106,10 +110,23 @@
   <!-- ════════════ HERO ════════════ -->
   <section class="hero" id="hero">
     <div class="hero-content">
-      <div class="badge-pill">
-        <span class="icon">&#10022;</span>
-        <span data-lang="en">K-Beauty Medical Tourism Platform</span>
-        <span data-lang="ko" hidden>K-뷰티 의료관광 플랫폼</span>
+      <div class="hero-logo">
+        <svg viewBox="0 0 112 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="miin-g" x1="0" y1="0" x2="112" y2="0">
+              <stop stop-color="#E8D48B"/>
+              <stop offset="0.5" stop-color="#DBA63A"/>
+              <stop offset="1" stop-color="#C9A84C"/>
+            </linearGradient>
+          </defs>
+          <path d="M4 52V20C4 4 22 4 22 20V52" stroke="url(#miin-g)" stroke-width="7" stroke-linecap="round"/>
+          <path d="M22 20C22 4 40 4 40 20V52" stroke="url(#miin-g)" stroke-width="7" stroke-linecap="round"/>
+          <circle cx="56" cy="5" r="4" fill="url(#miin-g)"/>
+          <path d="M56 16V52" stroke="url(#miin-g)" stroke-width="7" stroke-linecap="round"/>
+          <circle cx="74" cy="5" r="4" fill="url(#miin-g)"/>
+          <path d="M74 16V52" stroke="url(#miin-g)" stroke-width="7" stroke-linecap="round"/>
+          <path d="M90 52V20C90 4 108 4 108 20V52" stroke="url(#miin-g)" stroke-width="7" stroke-linecap="round"/>
+        </svg>
       </div>
 
       <h1 class="hero-title" data-lang="en">
@@ -197,11 +214,11 @@
             <div class="ring ring-1"></div>
             <div class="ring ring-2"></div>
             <div class="ring ring-3"></div>
-            <div class="dot dot-1"></div>
-            <div class="dot dot-2"></div>
-            <div class="dot dot-3"></div>
-            <div class="dot dot-4"></div>
-            <div class="center-text">acu</div>
+            <div class="orbit orbit-1"><div class="dot"></div></div>
+            <div class="orbit orbit-2"><div class="dot"></div></div>
+            <div class="orbit orbit-3"><div class="dot"></div></div>
+            <div class="orbit orbit-4"><div class="dot"></div></div>
+            <div class="center-text"><span class="ct-acu">acu</span><span class="ct-it">IT</span></div>
           </div>
         </div>
       </div>
@@ -219,7 +236,12 @@
 
       <div class="product-card reveal">
         <div class="product-header">
-          <div class="product-icon">M</div>
+          <div class="product-icon">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 28V14C5 4 16 4 16 14V28" stroke="#08090E" stroke-width="3.5" stroke-linecap="round"/>
+              <path d="M16 14C16 4 27 4 27 14V28" stroke="#08090E" stroke-width="3.5" stroke-linecap="round"/>
+            </svg>
+          </div>
           <div>
             <div class="product-name">MIIN <span class="product-name-sub">(미인)</span></div>
           </div>
@@ -280,13 +302,6 @@
           </div>
         </div>
 
-        <div class="product-cta">
-          <a href="#contact" class="btn-primary">
-            <span data-lang="en">Learn More</span>
-            <span data-lang="ko" hidden>자세히 보기</span>
-            <span>&rarr;</span>
-          </a>
-        </div>
       </div>
     </div>
   </section>
@@ -434,7 +449,8 @@
   <section class="partners" id="partners">
     <div class="container" style="text-align: center;">
       <div class="reveal">
-        <p class="section-label">Backed By</p>
+        <p class="section-label" data-lang="en">Strategic Partner</p>
+        <p class="section-label" data-lang="ko" hidden>전략적 파트너</p>
       </div>
       <div class="partner-logos reveal">
         <span class="partner-text"><span class="colab-orange">COLAB</span> <span class="colab-gray">AD</span></span>

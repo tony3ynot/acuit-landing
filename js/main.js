@@ -120,15 +120,15 @@ function countUp(el, target, duration, prefix, suffix) {
 
   function createParticles() {
     particles = [];
-    const count = Math.floor((w * h) / 25000);
+    const count = Math.floor((w * h) / 18000);
     for (let i = 0; i < count; i++) {
       particles.push({
         x: Math.random() * w,
         y: Math.random() * h,
-        r: Math.random() * 1.5 + 0.5,
-        dx: (Math.random() - 0.5) * 0.3,
-        dy: (Math.random() - 0.5) * 0.3,
-        alpha: Math.random() * 0.4 + 0.1,
+        r: Math.random() * 2 + 0.5,
+        dx: (Math.random() - 0.5) * 0.4,
+        dy: (Math.random() - 0.5) * 0.4,
+        alpha: Math.random() * 0.6 + 0.15,
         pulse: Math.random() * Math.PI * 2,
       });
     }
@@ -163,8 +163,8 @@ function countUp(el, target, duration, prefix, suffix) {
           ctx.beginPath();
           ctx.moveTo(particles[i].x, particles[i].y);
           ctx.lineTo(particles[j].x, particles[j].y);
-          ctx.strokeStyle = `rgba(201, 168, 76, ${0.06 * (1 - dist / 120)})`;
-          ctx.lineWidth = 0.5;
+          ctx.strokeStyle = `rgba(201, 168, 76, ${0.12 * (1 - dist / 120)})`;
+          ctx.lineWidth = 0.6;
           ctx.stroke();
         }
       }
