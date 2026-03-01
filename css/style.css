@@ -81,6 +81,7 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
+  color-scheme: dark;
 }
 
 body {
@@ -1479,7 +1480,7 @@ img {
   }
 
   .hero-logo {
-    font-size: 56px;
+    display: none;
   }
 
   .hero-title {
