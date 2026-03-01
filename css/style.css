@@ -537,12 +537,13 @@ img {
   flex-wrap: wrap;
 }
 
-/* Buttons */
+/* Buttons — gradient on ::before to prevent Samsung Internet dark mode override */
 .btn-primary {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: var(--gradient-gold-h);
+  position: relative;
+  background: transparent;
   color: #08090E;
   font-family: var(--font-body);
   font-size: 15px;
@@ -553,6 +554,16 @@ img {
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  isolation: isolate;
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--gradient-gold-h);
+  border-radius: inherit;
+  z-index: -1;
 }
 
 .btn-primary:hover {
@@ -1486,6 +1497,16 @@ img {
 
   .hero-logo {
     display: none;
+  }
+
+  /* Samsung Internet dark mode fix: use solid gold instead of gradient text */
+  .logo-it,
+  .hero-logo-it {
+    background: none;
+    -webkit-background-clip: initial;
+    background-clip: initial;
+    -webkit-text-fill-color: var(--accent-primary);
+    color: var(--accent-primary);
   }
 
   .hero-title {
