@@ -24,8 +24,8 @@
   --accent-primary:   #C9A84C;
   --accent-light:     #E8D48B;
   --accent-dark:      #A07C2A;
-  --accent-glow:      rgba(201, 168, 76, 0.15);
-  --accent-subtle:    rgba(201, 168, 76, 0.08);
+  --accent-glow:      rgba(201, 168, 76, 0.18);
+  --accent-subtle:    rgba(201, 168, 76, 0.10);
 
   --gradient-gold:    linear-gradient(180deg, #E8D48B, #A07C2A);
   --gradient-gold-h:  linear-gradient(90deg, #E8D48B, #C9A84C, #A07C2A);
@@ -1588,5 +1588,26 @@ img {
 
   .hero-ctas {
     flex-direction: column;
+  }
+}
+
+/* ══════════════════════════════════════
+   MOBILE DARK MODE — brighter gold
+   Prevents gold appearing brownish on
+   mobile screens with dark mode enabled
+   ══════════════════════════════════════ */
+@media (max-width: 768px) and (prefers-color-scheme: dark) {
+  :root {
+    --accent-primary:   #D4B44E;
+    --accent-light:     #F0DC8A;
+    --accent-dark:      #B89530;
+    --accent-glow:      rgba(212, 180, 78, 0.18);
+    --accent-subtle:    rgba(212, 180, 78, 0.10);
+    --text-accent:      #D4B44E;
+    --gradient-gold:    linear-gradient(180deg, #F0DC8A, #B89530);
+    --gradient-gold-h:  linear-gradient(90deg, #F0DC8A, #D4B44E, #B89530);
+    --gradient-gold-r:  radial-gradient(circle, #F0DC8A, #D4B44E, #B89530);
+    --border-subtle:    rgba(212, 180, 78, 0.06);
+    --border-hover:     rgba(212, 180, 78, 0.30);
   }
 }
