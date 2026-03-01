@@ -1509,6 +1509,17 @@ img {
     color: var(--accent-primary);
   }
 
+  /* Samsung Internet dark mode fix: outline button instead of filled */
+  .btn-primary {
+    background: transparent;
+    border: 1.5px solid var(--accent-primary);
+    color: var(--accent-primary);
+  }
+
+  .btn-primary::before {
+    display: none;
+  }
+
   .hero-title {
     font-size: 36px;
   }
