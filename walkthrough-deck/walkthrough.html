@@ -701,8 +701,14 @@ p.slide-desc {
     max-width: 100%;
   }
   .arch-row {
-    flex-direction: column;
-    gap: 12px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  /* Backend row - single centered item */
+  .arch-row:has(.arch-box[style*="border-color"]) {
+    grid-template-columns: 1fr;
+    max-width: 100%;
   }
   .arch-box {
     padding: 16px 20px;
