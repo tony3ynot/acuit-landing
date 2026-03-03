@@ -84,12 +84,21 @@ html, body {
 @media (max-width: 768px) {
   .slide {
     position: relative;
-    min-height: calc(100vh - 52px); /* Subtract nav bar height */
-    padding: 80px 16px 72px; /* Top padding for logo, bottom for nav */
+    min-height: auto;
+    padding: 60px 16px 40px;
+    opacity: 1 !important; /* Show all slides */
+    transform: translateX(0) !important;
+    pointer-events: all !important;
   }
   .slide.active,
   .slide.prev {
     transform: translateX(0);
+  }
+
+  /* Add separator between slides */
+  .slide:not(:last-child) {
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 0;
   }
 }
 
@@ -599,19 +608,27 @@ p.slide-desc {
   .hero-subtitle-kr { font-size: 16px; }
   .hero-subtitle-text { font-size: 12px; letter-spacing: 3px; margin-bottom: 16px; }
 
-  /* Home logo - smaller and more compact */
+  /* Home logo - make it sticky */
   .home-logo {
     font-size: 18px;
     top: 12px;
     left: 12px;
-    background: rgba(8, 9, 14, 0.9);
-    padding: 4px 8px;
+    background: rgba(8, 9, 14, 0.95);
+    padding: 6px 10px;
     border-radius: 6px;
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    position: sticky;
+    z-index: 1000;
   }
 
   /* Slides */
   .slide-inner { gap: 24px; }
+
+  /* First slide - extra top padding */
+  .slide:first-child {
+    padding-top: 80px;
+  }
 
   /* Typography */
   h2.slide-title {
@@ -717,30 +734,9 @@ p.slide-desc {
     font-size: 12px;
   }
 
-  /* Navigation */
+  /* Navigation - hide on mobile */
   .nav-bar {
-    height: 52px;
-    padding: 0 16px;
-    position: sticky;
-    bottom: 0;
-  }
-  .nav-btn {
-    width: 36px;
-    height: 36px;
-    font-size: 16px;
-  }
-  .slide-counter {
-    font-size: 12px;
-  }
-  .dot {
-    width: 6px;
-    height: 6px;
-  }
-  .dot.active {
-    width: 20px;
-  }
-  .nav-right span {
-    display: none; /* Hide keyboard hint on mobile */
+    display: none;
   }
 
   /* Key hint */
