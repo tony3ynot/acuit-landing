@@ -124,6 +124,43 @@ html, body {
   border-radius: 4px;
 }
 
+/* Hero MIIN Logo */
+.hero-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.hero-miin-logo {
+  display: block;
+  filter: drop-shadow(0 0 30px rgba(212, 180, 78, 0.3));
+  animation: logo-glow 4s ease-in-out infinite alternate;
+}
+
+@keyframes logo-glow {
+  0% { filter: drop-shadow(0 0 20px rgba(212, 180, 78, 0.2)); }
+  100% { filter: drop-shadow(0 0 40px rgba(212, 180, 78, 0.5)); }
+}
+
+.hero-subtitle-kr {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--text-dim);
+  font-family: 'Noto Sans KR', sans-serif;
+  margin-top: 20px;
+}
+
+.hero-subtitle-text {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 6px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
 h1.hero-title {
   font-size: 72px;
   font-weight: 900;
@@ -523,6 +560,14 @@ p.slide-desc {
   .phone-mockup { width: 200px; }
   .phone-mockup.large { width: 240px; }
   .roadmap-grid { grid-template-columns: 1fr; }
+  .hero-miin-logo { width: 160px; height: 80px; }
+  .hero-subtitle-kr { font-size: 20px; }
+}
+
+@media (max-width: 768px) {
+  .hero-miin-logo { width: 140px; height: 70px; }
+  .hero-subtitle-kr { font-size: 18px; }
+  .hero-subtitle-text { font-size: 14px; letter-spacing: 4px; }
 }
 </style>
 </head>
@@ -540,10 +585,27 @@ p.slide-desc {
 <!-- ==================== SLIDE 0: TITLE ==================== -->
 <div class="slide active" data-index="0">
   <div class="slide-inner title-layout">
-    <h1 class="hero-title">
-      MIIN
-      <span class="version">PRODUCT WALKTHROUGH</span>
-    </h1>
+    <div class="hero-logo-container">
+      <svg class="hero-miin-logo" viewBox="0 0 112 56" width="200" height="100" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="miin-hero-g" x1="0" y1="0" x2="112" y2="0" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#F0DC8A" />
+            <stop offset="0.5" stop-color="#D4B44E" />
+            <stop offset="1" stop-color="#B89530" />
+          </linearGradient>
+        </defs>
+        <path d="M4 52V20C4 4 22 4 22 20V52" stroke="url(#miin-hero-g)" stroke-width="7" stroke-linecap="round" />
+        <path d="M22 20C22 4 40 4 40 20V52" stroke="url(#miin-hero-g)" stroke-width="7" stroke-linecap="round" />
+        <circle cx="56" cy="5" r="4" fill="url(#miin-hero-g)" />
+        <path d="M56 16V52" stroke="url(#miin-hero-g)" stroke-width="7" stroke-linecap="round" />
+        <circle cx="74" cy="5" r="4" fill="url(#miin-hero-g)" />
+        <path d="M74 16V52" stroke="url(#miin-hero-g)" stroke-width="7" stroke-linecap="round" />
+        <path d="M90 52V20C90 4 108 4 108 20V52" stroke="url(#miin-hero-g)" stroke-width="7" stroke-linecap="round" />
+      </svg>
+      <span class="hero-subtitle-kr">(미인)</span>
+    </div>
+    <h2 class="hero-subtitle-text">PRODUCT WALKTHROUGH</h2>
     <p class="slide-subtitle">
       외국인 의료관광객을 위한 AI 기반 글로벌 의료관광 플랫폼<br>
       AI-Powered Global Medical Tourism Platform
